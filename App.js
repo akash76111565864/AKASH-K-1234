@@ -1,41 +1,35 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import '/App.css'; 
-import About from './pages/About'
-import Blog from './pages/Blog'
-const App = () => {
-    return (
-        <Router>
-            <div className="app">
-                <nav className="navbar">
-                    <li>
-                    <ul>home</ul>
-                    <ul><Link to="/About">About</Link></ul>
-                    <ul><Link to="/Blog">Blog</Link></ul>
-                    <ul>Get involved</ul>
-                    <ul>Contact</ul>
-                    <ul>Shop</ul>
-                    </li>                 
-                </nav>
+import './App.css'; 
+import backgroundImage from '../src/pages/internproject1-1.png';
+import image1 from '../src/pages/MacBook Air - 2.png';
+import image2 from '../src/pages/MacBook Air - 3.png';
+import image3 from '../src/pages/MacBook Air - 4.png';
+import image4 from '../src/pages/MacBook Air - 62.png';
 
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/blog" element={<Blog />} />
-                </Routes>
-            </div>
-        </Router>
-    );
-};
-
-const Home = () => (
-    <div className="home-content">
-        <h1>Welcome to My Website</h1>
-        <div className="image-gallery">
-            <img src="../public/internproject1-1.png" alt="Image1" />
-            <img src="../public/internproject1-1.png" alt="Image2" />
-            <img src="../public/internproject1-1.png" alt="Image3" />
-        </div>
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={backgroundImage} alt="Background" className="App-bg" />
+        <nav className="navbar">
+          <ul className="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Get Involved</li>
+            <li>Contact</li>
+            <li>Shop</li>
+          </ul>
+        </nav>
+      </header>
+      <div className="image-container">
+        <img src={image1} alt="Description 1" className="additional-image" />
+        <img src={image2} alt="Description 2" className="additional-image" />
+        <img src={image3} alt="Description 3" className="additional-image" />
+        <img src={image4} alt="Description 4" className="additional-image" />
+      </div>
     </div>
-);
+  );
+}
+
 export default App;
