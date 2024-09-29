@@ -1,0 +1,14 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+    background-color: #f0f0f0; /* Optional: background color */
+  }
+  
+  .about-image {
+    max-width: 100%; /* Responsive */
+    max-height: 100%; /* Responsive */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  

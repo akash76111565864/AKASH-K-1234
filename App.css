@@ -1,0 +1,43 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  height: 100%;
+  position: relative; /* Allow absolute positioning of children */
+}
+
+.App-header {
+  position: relative;
+  text-align: start;
+  color: white; /* Change to suit your design */
+}
+
+.App-bg {
+  width: 100%;
+  height: auto; /* Ensure the image is responsive */
+}
+
+.navbar {
+  position: absolute; /* Positioning relative to App-header */
+  top: 20px; /* Adjust based on your design */
+  left:50%;
+  transform: translateX(-60%); /* Center horizontally */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 60px; /* Space between items */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  color: white;
+  cursor: pointer;
+  font-size: 18px; /* Adjust font size as needed */
+}

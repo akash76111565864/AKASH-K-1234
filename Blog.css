@@ -1,0 +1,11 @@
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the image */
+  margin-top: 20px;
+}
+
+.group-image {
+  max-width: 100%; /* Make it responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+}
