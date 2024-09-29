@@ -2,36 +2,39 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App {
-  height: 100%;
-  position: relative; /* Allow absolute positioning of children */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center content horizontally */
 }
 
 .App-header {
   position: relative;
-  text-align: start;
-  color: white; /* Change to suit your design */
+  width: 100%;
+  height: 400px; /* Fixed height for the header */
+  overflow: hidden; /* Hide overflow if needed */
 }
 
 .App-bg {
   width: 100%;
-  height: auto; /* Ensure the image is responsive */
+  height: 100%; /* Ensure it fills the header */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
 }
 
 .navbar {
   position: absolute; /* Positioning relative to App-header */
   top: 20px; /* Adjust based on your design */
-  left:50%;
-  transform: translateX(-60%); /* Center horizontally */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
 }
 
 .nav-links {
   list-style-type: none;
   display: flex;
-  gap: 60px; /* Space between items */
+  gap: 30px; /* Space between items */
   margin: 0;
   padding: 0;
 }
@@ -41,3 +44,30 @@ body, html {
   cursor: pointer;
   font-size: 18px; /* Adjust font size as needed */
 }
+
+/* Additional images styling */
+.image-container {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images horizontally */
+  margin-top: 20px; /* Space above the images */
+}
+
+.additional-image {
+  width: 80%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px 0; /* Space between images vertically */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Adjust spacing */
+  }
+
+  .additional-image {
+    width: 90%; /* Adjust image size for smaller screens */
+  }
+}
+
