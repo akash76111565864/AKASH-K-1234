@@ -4,8 +4,7 @@ import backgroundImage from '../src/pages/internproject1-1.png';
 import image1 from '../src/pages/MacBook Air - 2.png';
 import image2 from '../src/pages/MacBook Air - 3.png';
 import image3 from '../src/pages/MacBook Air - 4.png';
-import image4 from '../src/pages/MacBook Air - 62.png';
-
+import image4  from '../src/pages/MacBook Air - 6 (1).png';
 function App() {
   return (
     <div className="App">
